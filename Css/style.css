@@ -1,0 +1,85 @@
+.ques {
+    width: 40%;
+    border: 1px solid blue;
+    background-color: lightgray;
+    height: 60px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    padding-top: 4%;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.rep {
+    width: 40%;
+    border: 1px solid green;
+    background-color: lightgray;
+    height: 60px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    padding-top: 4%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: 4%;
+}
+
+#chat {
+    height: 600px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+#msg {
+    overflow-y: scroll;
+    height: 400px;
+    width: 103%;
+    position: relative;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+input {
+    font-size: 20px;
+}
+
+.nope {
+    width: 40%;
+    border: 1px solid red;
+    background-color: lightgray;
+    height: 60px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    padding-top: 4%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: 4%;
+}
+
+#chat h1 {
+    margin: auto;
+    width: 40%;
+}
+
+.attend {
+    display: block;
+}
+
+#wait {
+    display: none;
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+    columns: grey;
+}
