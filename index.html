@@ -11,14 +11,13 @@
 
 <body>
     <section id="chat">
-        <button id=close onclick="return close('chat')">Close</button>
         <h1>Bienvenue je suis à votre disposition</h1>
         <div id="msg">
 
         </div>
         <p id="wait">Bot est en train d'écrire</p>
         <form class="zonetext" onsubmit="return getAnswer(this)">
-            <input type="text" name="input" id="humain" value="" />
+            <input type="text" onfocus="this.value=''" name="input" id="humain" value="" />
             <input type="submit" name="submit" value="ok" />
         </form>
     </section>

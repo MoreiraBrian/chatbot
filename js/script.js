@@ -1,8 +1,9 @@
 var bot = ["Bonjour", "Bien et vous?", "Comment puis-je vous être utile?", "Débranchez la puis, rebranchez la"];
 var question = ["Bonjour", "Comment vas tu?", "Ma box ne veux plus démarer", "bonjour", "salut", "yo"];
+var total = document.getElementById("chat");
 
-function close() {
-    document.getElementById("chat").style.display = "none";
+function close(form) {
+    total.style.display = "none";
 }
 
 function rep(bot) {
