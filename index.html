@@ -10,16 +10,18 @@
 </head>
 
 <body>
+    <button id="open">ChatBot</button>
     <section id="chat">
-        <button id=close onclick="return close('chat')">Close</button>
+        <button id="close">X</button>
         <h1>Bienvenue je suis à votre disposition</h1>
         <div id="msg">
 
         </div>
-        <p id="wait">Bot est en train d'écrire</p>
+        <p id="wait">Bot est en train d'écrire <span id="4">.<span><span id="5">.</span><span id="6">.</span></p>
+        <p id="write">Brian est en train d'écrire<span id="1">.<span><span id="2">.</span><span id="3">.</span></p>
         <form class="zonetext" onsubmit="return getAnswer(this)">
-            <input type="text" name="input" id="humain" value="" />
-            <input type="submit" name="submit" value="ok" />
+            <input type="text" name="input" id="humain" value="" autocomplete="off" />
+            <input type="submit" name="envoyer" value="OK" />
         </form>
     </section>
     <script src="js/script.js"></script>

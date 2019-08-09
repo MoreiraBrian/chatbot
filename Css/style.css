@@ -26,21 +26,24 @@
 }
 
 #chat {
-    height: 600px;
-    width: 80%;
+    height: 70%;
+    width: 30%;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     overflow: hidden;
     margin: auto;
-    position: relative;
-    display: block;
+    right: 50px;
+    bottom: 0;
+    position: fixed;
+    display: none;
 }
 
 #msg {
     overflow-y: scroll;
-    height: 400px;
+    height: 76%;
     width: 103%;
     position: relative;
+    padding-bottom: 10px;
 }
 
 form {
@@ -62,6 +65,7 @@ input {
     justify-content: center;
     display: flex;
     padding-top: 4%;
+    padding-left: 3%;
     margin-top: 1%;
     margin-left: auto;
     margin-right: 4%;
@@ -79,7 +83,40 @@ input {
 #wait {
     display: none;
     position: absolute;
-    bottom: 120px;
+    bottom: 30px;
     right: 30px;
     columns: grey;
+}
+
+#write {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    columns: grey;
+}
+
+#open {
+    display: block;
+    background-color: aqua;
+    color: dimgray;
+    border: 0;
+    width: 150px;
+    font-size: 34px;
+    position: fixed;
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+    right: 40px;
+}
+
+#close {
+    color: red;
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    margin: 0 2%;
+}
+
+span {
+    display: inline-block;
 }

@@ -1,9 +1,58 @@
 var bot = ["Bonjour", "Bien et vous?", "Comment puis-je vous être utile?", "Débranchez la puis, rebranchez la"];
-var question = ["Bonjour", "Comment vas tu?", "Ma box ne veux plus démarer", "bonjour", "salut", "yo"];
-
-function close() {
+var question = ["Bonjour", "Comment vas tu?", "Ma box ne veux plus démarer", "Salut", "Yo"];
+var open = document.getElementById("open");
+var close = document.getElementById("close");
+var write = document.getElementById("humain");
+close.addEventListener('click', function() {
     document.getElementById("chat").style.display = "none";
+    document.getElementById("open").style.display = "block";
+})
+
+function tutut() {
+    document.getElementById("1").animate([
+        { transform: "translateY(0px)" },
+        { transform: "translateY(-5px)" },
+        { transform: "translateY(0px)" }
+    ], { duration: 800, iterations: Infinity });
+    document.getElementById("2").animate([
+        { transform: "translateY(0px)" },
+        { transform: "translateY(-5px)" },
+        { transform: "translateY(0px)" }
+    ], { duration: 800, iterations: Infinity, delay: 300 });
+    document.getElementById("3").animate([
+        { transform: "translateY(0px)" },
+        { transform: "translateY(-5px)" },
+        { transform: "translateY(0px)" }
+    ], { duration: 800, iterations: Infinity, delay: 600 });
+    document.getElementById("4").animate([
+        { transform: "translateY(0px)" },
+        { transform: "translateY(-5px)" },
+        { transform: "translateY(0px)" }
+    ], { duration: 800, iterations: Infinity });
+    document.getElementById("5").animate([
+        { transform: "translateY(0px)" },
+        { transform: "translateY(-5px)" },
+        { transform: "translateY(0px)" }
+    ], { duration: 800, iterations: Infinity, delay: 300 });
+    document.getElementById("6").animate([
+        { transform: "translateY(0px)" },
+        { transform: "translateY(-5px)" },
+        { transform: "translateY(0px)" }
+    ], { duration: 800, iterations: Infinity, delay: 600 });
+
 }
+
+open.addEventListener('click', function() {
+    document.getElementById("open").style.display = "none";
+    document.getElementById("chat").style.display = "block";
+})
+write.addEventListener('input', function() {
+    document.getElementById("write").style.display = "block";
+
+    // setTimeout(function() {
+    // 
+    // }, 2000);
+})
 
 function rep(bot) {
     var node = document.createElement("div");
@@ -57,17 +106,8 @@ function getAnswer(form) {
     } else {
         setTimeout(erreur, 3000);
     }
-
+    document.getElementById("write").style.display = "none";
+    var tape = form.elements["humain"].value = "";
     return false;
 }
-
-
-
-
-// setTimeout('quest(question[0])', 5000);
-// setTimeout('rep(bot[0])', 5000);
-// setTimeout('quest(question[1])', 9000);
-// setTimeout('rep(bot[1])', 10000);
-// setTimeout('rep(bot[2])', 12000);
-// setTimeout('quest(question[2])', 14000);
-// setTimeout('rep(bot[3])', 18000);
+tutut();
